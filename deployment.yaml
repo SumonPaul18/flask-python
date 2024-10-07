@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-mail-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flask-mail-app
+  template:
+    metadata:
+      labels:
+        app: flask-mail-app
+    spec:
+      containers:
+      - name: flask-mail-app
+        image: your_dockerhub_username/flask-mail-app
+        ports:
+        - containerPort: 5000
+        env:
+        - name: MAIL_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mail-secrets
+              key: MAIL_USERNAME
+        - name: MAIL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mail-secrets
+              key: MAIL_PASSWORD
