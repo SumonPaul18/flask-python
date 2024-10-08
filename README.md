@@ -2,3 +2,4 @@
 2. akshaypawar696/mailVerificationFlask: https://github.com/akshaypawar696/mailVerificationFlask.git
 3. DinakaranK/Flask-Email-OTP-verification: https://github.com/DinakaranK/Flask-Email-OTP-verification.git
 4. rhutujashevde/email-otp-flask: https://github.com/rhutujashevde/email-otp-flask.git
+5. [Following - ashutoshkrris](https://github.com/ashutoshkrris/Flask-User-Authentication-With-Email-Verification.git)
