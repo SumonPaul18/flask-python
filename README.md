@@ -109,7 +109,7 @@ if __name__ == '__main__':
 #
 #### Reference:
 1. [Flask Official Docs](https://flask.palletsprojects.com/)
-2. [Flask-GeeksforGeeks.org](https://www.geeksforgeeks.org/flask-tutorial/)
-3. []()
-4. []()
+2. [Flask Tutorial - Blog](https://www.geeksforgeeks.org/flask-tutorial/)
+3. [Flask Tutorial - Github](https://github.com/app-generator/tutorial-flask/tree/main)
+4. [Flask Starter Template - Github](https://github.com/ksh7/flask-starter.git)
 5. []()   
