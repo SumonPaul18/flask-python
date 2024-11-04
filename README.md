@@ -107,9 +107,8 @@ if __name__ == '__main__':
 এইভাবে আপনি ফ্লাস্ক দিয়ে একটি মাইক্রো সার্ভিসেস অ্যাপ্লিকেশন তৈরি করতে পারেন এবং বিভিন্ন সার্ভিসগুলো সংযুক্ত করতে পারেন। কোনো প্রশ্ন থাকলে জানাতে পারেন! 😊
 
 #
-
-1. [Ashishprashar222/Flask_Mail](https://github.com/Ashishprashar222/Flask_Mail.git)
-2. akshaypawar696/mailVerificationFlask: https://github.com/akshaypawar696/mailVerificationFlask.git
-3. DinakaranK/Flask-Email-OTP-verification: https://github.com/DinakaranK/Flask-Email-OTP-verification.git
-4. rhutujashevde/email-otp-flask: https://github.com/rhutujashevde/email-otp-flask.git
-5. [Following - ashutoshkrris](https://github.com/ashutoshkrris/Flask-User-Authentication-With-Email-Verification.git)
+#### Reference:
+1. []()
+2. []()
+3. []()
+4. []()   
