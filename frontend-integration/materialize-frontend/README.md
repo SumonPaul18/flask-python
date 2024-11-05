@@ -11,4 +11,5 @@
 - https://flask-bulma-css.appseed.us/
 - https://github.com/app-generator/flask-bulma-css
 - https://bulma.io/
+- https://vchu.hashnode.dev/htmx-with-flask-bulma-modals
 - 
