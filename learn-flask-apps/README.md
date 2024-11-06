@@ -7,6 +7,7 @@
 
 #
 #### Reference:
+- [Python Flask Framework](https://www.youtube.com/playlist?list=PLJOZbcDBbxov43IhSlnTmHnqxgSFrhKLO)
 - [How to Use Vertical Navbar Using Flask - Youtube](https://www.youtube.com/watch?v=f-DdkUqryz4)
 - [Vertical Navbar in Flask - Github](https://github.com/sathyainfotech/Vertical-Navbar.git)
 - [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xi-facelift)
@@ -28,8 +29,8 @@
 - [Python - Flask for beginners](https://www.youtube.com/playlist?list=PLIbZb2AYMPrXcC8BsXy_dyIwHBVASsXtM)
 - [Flask Tutorial for Beginners](https://www.youtube.com/playlist?list=PLrC-HcVNfULaP6y6z57MaF2L9fZz0RQJq)
 - [Flask Blueprints & Using Multiple Python Files](https://www.youtube.com/watch?v=WteIH6J9v64)
-- []()
-- []()
+- [How to Create a Login Page in Flask using Session ](https://www.youtube.com/watch?v=NiepUsVbdN0&list=PLJOZbcDBbxov43IhSlnTmHnqxgSFrhKLO&index=7)
+- [Create Modal Using Flask & Bootstrap](https://www.youtube.com/watch?v=lp1xphXWZOs&list=PLJOZbcDBbxov43IhSlnTmHnqxgSFrhKLO&index=13)
 - []()
 - []()
 - []()
