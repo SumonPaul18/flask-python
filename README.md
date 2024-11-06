@@ -112,4 +112,4 @@ if __name__ == '__main__':
 2. [Flask Tutorial - Blog](https://www.geeksforgeeks.org/flask-tutorial/)
 3. [Flask Tutorial - Github](https://github.com/app-generator/tutorial-flask/tree/main)
 4. [Flask Starter Template - Github](https://github.com/ksh7/flask-starter.git)
-5. []()   
+5. [Google OAuth Login with Flask Conditional rendering with HandelBar JS](https://www.youtube.com/watch?v=vdBT2vdJF2U)   
