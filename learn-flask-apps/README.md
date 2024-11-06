@@ -25,4 +25,13 @@
 - [Python Flask Tutorial - Blog project](https://www.youtube.com/playlist?list=PLe4mIUXfbIqaLWrzsSDQAAK3_NQB1jBZZ)
 - [Blueprints and Templates Explained](https://www.youtube.com/watch?v=w6v9A5peQT8)
 - [Flask Route Protection with Middleware](https://www.youtube.com/watch?v=M9n3q_VYtko&list=PL19fiuet8c3mexpvz9mfHD2BHrY8YM0oL&index=13)
+- [Python - Flask for beginners](https://www.youtube.com/playlist?list=PLIbZb2AYMPrXcC8BsXy_dyIwHBVASsXtM)
+- [Flask Tutorial for Beginners](https://www.youtube.com/playlist?list=PLrC-HcVNfULaP6y6z57MaF2L9fZz0RQJq)
+- [Flask Blueprints & Using Multiple Python Files](https://www.youtube.com/watch?v=WteIH6J9v64)
 - []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
