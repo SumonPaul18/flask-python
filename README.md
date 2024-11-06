@@ -112,4 +112,6 @@ if __name__ == '__main__':
 2. [Flask Tutorial - Blog](https://www.geeksforgeeks.org/flask-tutorial/)
 3. [Flask Tutorial - Github](https://github.com/app-generator/tutorial-flask/tree/main)
 4. [Flask Starter Template - Github](https://github.com/ksh7/flask-starter.git)
-5. [Google OAuth Login with Flask Conditional rendering with HandelBar JS](https://www.youtube.com/watch?v=vdBT2vdJF2U)   
+5. [Google OAuth Login with Flask Conditional rendering with HandelBar JS](https://www.youtube.com/watch?v=vdBT2vdJF2U)
+6. [Getting started with handlebar.JS and Flask Python](https://www.youtube.com/watch?v=mAivEV6qSLg)
+7. [Create a autocomplete System in Elastic Search | Frontend + backend](https://www.youtube.com/watch?v=gDOu_Su1GqY)
