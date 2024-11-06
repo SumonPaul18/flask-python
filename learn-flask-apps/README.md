@@ -7,6 +7,7 @@
 
 #
 #### Reference:
+- [Flask Web Development in Bangla](https://www.youtube.com/playlist?list=PL5WWFMzXof5hA8cLzEoim7BEkHcmddbOK)
 - [Python Flask Framework](https://www.youtube.com/playlist?list=PLJOZbcDBbxov43IhSlnTmHnqxgSFrhKLO)
 - [How to Use Vertical Navbar Using Flask - Youtube](https://www.youtube.com/watch?v=f-DdkUqryz4)
 - [Vertical Navbar in Flask - Github](https://github.com/sathyainfotech/Vertical-Navbar.git)
