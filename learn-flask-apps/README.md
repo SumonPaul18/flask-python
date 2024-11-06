@@ -23,6 +23,6 @@
 - [Python Flask Tutorial](https://www.youtube.com/playlist?list=PLJJcOjd3n1Zddc1RmIhkjmND7qKS6WGiC)
 - [COMP1531 - Flask](https://www.youtube.com/playlist?list=PLbSaCpDlfd6qTRiRQFIkCDU7RbAmk_sIR)
 - [Python Flask Tutorial - Blog project](https://www.youtube.com/playlist?list=PLe4mIUXfbIqaLWrzsSDQAAK3_NQB1jBZZ)
-- []()
-- []()
+- [Blueprints and Templates Explained](https://www.youtube.com/watch?v=w6v9A5peQT8)
+- [Flask Route Protection with Middleware](https://www.youtube.com/watch?v=M9n3q_VYtko&list=PL19fiuet8c3mexpvz9mfHD2BHrY8YM0oL&index=13)
 - []()
