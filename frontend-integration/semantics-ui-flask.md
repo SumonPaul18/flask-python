@@ -1,1 +1,2 @@
 [Semantics Ui with Flask Python](https://www.youtube.com/watch?v=uiDZ4spT4_Q)
+[semantic ui admin dashboard template](https://www.youtube.com/watch?v=g7lO8wqrLFg)
