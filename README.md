@@ -116,9 +116,9 @@ if __name__ == '__main__':
 
 </div>
 
-<div align="left">
+<div align="right">
     
-- [Flask Official Docs](https://flask.palletsprojects.com/)
+ [Flask Official Docs](https://flask.palletsprojects.com/)
 - [Flask Tutorial - Blog](https://www.geeksforgeeks.org/flask-tutorial/)
 - [Flask Tutorial - Github](https://github.com/app-generator/tutorial-flask/tree/main)
 - [Flask Starter Template - Github](https://github.com/ksh7/flask-starter.git)
