@@ -116,6 +116,12 @@ if __name__ == '__main__':
 
 </div>
 
+<div align="left">
+    
+[How to Create a Login Page in Flask using Session ](https://www.youtube.com/watch?v=NiepUsVbdN0&list=PLJOZbcDBbxov43IhSlnTmHnqxgSFrhKLO&index=7)
+
+</div>
+
 <div align="right">
     
  [Flask Official Docs](https://flask.palletsprojects.com/)
