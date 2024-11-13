@@ -118,6 +118,6 @@ if __name__ == '__main__':
 5. [Getting started with handlebar.JS and Flask Python](https://www.youtube.com/watch?v=mAivEV6qSLg)
 6. [Create a autocomplete System in Elastic Search | Frontend + backend](https://www.youtube.com/watch?v=gDOu_Su1GqY)
 
-<div align="center">
+<div align="left">
 A
 </div>
