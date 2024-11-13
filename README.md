@@ -118,13 +118,13 @@ if __name__ == '__main__':
 
 <div align="right">
     
-[How to Create a Login Page in Flask using Session ](https://www.youtube.com/watch?v=NiepUsVbdN0&list=PLJOZbcDBbxov43IhSlnTmHnqxgSFrhKLO&index=7)
+    - [How to Create a Login Page in Flask using Session ](https://www.youtube.com/watch?v=NiepUsVbdN0&list=PLJOZbcDBbxov43IhSlnTmHnqxgSFrhKLO&index=7)
 
 </div>
 
 <div align="left">
     
- [Flask Official Docs](https://flask.palletsprojects.com/)
+- [Flask Official Docs](https://flask.palletsprojects.com/)
 - [Flask Tutorial - Blog](https://www.geeksforgeeks.org/flask-tutorial/)
 - [Flask Tutorial - Github](https://github.com/app-generator/tutorial-flask/tree/main)
 - [Flask Starter Template - Github](https://github.com/ksh7/flask-starter.git)
