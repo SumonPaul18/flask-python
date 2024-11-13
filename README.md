@@ -113,16 +113,20 @@ if __name__ == '__main__':
 <div align="Center">
 #### Reference
 </div>
+
 <div align="left">
+    
 1. [Flask Official Docs](https://flask.palletsprojects.com/)
 2. [Flask Tutorial - Blog](https://www.geeksforgeeks.org/flask-tutorial/)
 3. [Flask Tutorial - Github](https://github.com/app-generator/tutorial-flask/tree/main)
 4. [Flask Starter Template - Github](https://github.com/ksh7/flask-starter.git)
 5. [Getting started with handlebar.JS and Flask Python](https://www.youtube.com/watch?v=mAivEV6qSLg)
 6. [Create a autocomplete System in Elastic Search | Frontend + backend](https://www.youtube.com/watch?v=gDOu_Su1GqY)
+
 </div>
 
 <div align="right">
+    
 - [Flask Web Development in Bangla](https://www.youtube.com/playlist?list=PL5WWFMzXof5hA8cLzEoim7BEkHcmddbOK)
 - [Python Flask Framework](https://www.youtube.com/playlist?list=PLJOZbcDBbxov43IhSlnTmHnqxgSFrhKLO)
 - [How to Use Vertical Navbar Using Flask - Youtube](https://www.youtube.com/watch?v=f-DdkUqryz4)
