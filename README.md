@@ -121,3 +121,6 @@ if __name__ == '__main__':
 <div align="left">
 A
 </div>
+<div align="right">
+B
+</div>
