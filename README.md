@@ -112,7 +112,7 @@ if __name__ == '__main__':
 #
 <div align="Center">
     
-#### Reference
+### Reference
 
 </div>
 
@@ -123,7 +123,7 @@ if __name__ == '__main__':
 3. [Flask Tutorial - Github](https://github.com/app-generator/tutorial-flask/tree/main)
 4. [Flask Starter Template - Github](https://github.com/ksh7/flask-starter.git)
 5. [Getting started with handlebar.JS and Flask Python](https://www.youtube.com/watch?v=mAivEV6qSLg)
-6. [Create a autocomplete System in Elastic Search | Frontend + backend](https://www.youtube.com/watch?v=gDOu_Su1GqY)
+6. [Create a autocomplete System in Elastic Search](https://www.youtube.com/watch?v=gDOu_Su1GqY)
 
 </div>
 
