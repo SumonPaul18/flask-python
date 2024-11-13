@@ -118,14 +118,6 @@ if __name__ == '__main__':
 5. [Getting started with handlebar.JS and Flask Python](https://www.youtube.com/watch?v=mAivEV6qSLg)
 6. [Create a autocomplete System in Elastic Search | Frontend + backend](https://www.youtube.com/watch?v=gDOu_Su1GqY)
 
-<table border="0">
- <tr> <td><b style="font-size:30px">Title</b></td></tr>
- <tr>
-    <td><b style="font-size:30px">Title</b></td>
-    <td><b style="font-size:30px">Title 2</b></td>
- </tr>
- <tr>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
- </tr>
-</table>
+<div align="center">
+A
+</div>
