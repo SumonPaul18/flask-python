@@ -110,3 +110,7 @@ if __name__ == '__main__':
 
 #
 #### Reference:
+
+- [Working with Databases - Flask Tutorial](https://youtu.be/sHWpXVXWJ0o)
+
+- []()
