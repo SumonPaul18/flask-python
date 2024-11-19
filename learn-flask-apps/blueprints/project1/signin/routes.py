@@ -1,5 +1,6 @@
 from signin import signin
+from flask import render_template
 
 @signin.route('/signin')
 def signin():
-    return "Sign In / Sign Up"
+    return render_template('index.html')
