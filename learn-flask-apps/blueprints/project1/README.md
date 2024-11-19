@@ -13,4 +13,11 @@
 
 - Best [Flask Web development skills](https://www.youtube.com/playlist?list=PLCgehTvigkDNZ6-INTmLGNeaCni-TM09v)
 
-- []()
+- [Different ways to structure your Flask application](https://youtu.be/fTwzT5iAoX8)
+
+- [How to Structure And Configure Big Flask Project](https://youtu.be/dITv8ZkH77A)
+- https://youtu.be/zRwy8gtgJ1A?list=PLpXfHEl2fzl4aRZ9RBrNqVDtdo6BRvQ4o
+-
+-
+-
+-
