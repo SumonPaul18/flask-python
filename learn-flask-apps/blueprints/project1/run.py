@@ -1,15 +1,7 @@
-from flask import Flask
+from app import app
+from signin import signin
 
-
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return "Home Page"
-
-@app.route('/signin')
-def signin():
-    return "Sign In / Sign Up"
+app.register_blueprint(signin)
 
 
 if __name__ == '__main__':
