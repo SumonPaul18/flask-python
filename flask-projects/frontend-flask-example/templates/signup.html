@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">Create Account</h1>
+        <form method="POST" action="/create_account" class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="full_name" name="full_name" type="text" class="validate" maxlength="255" required>
+                    <label for="full_name">Full Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" name="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" name="password" type="password" class="validate" required>
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <p>Instruqt’s terms of services apply. By signing up you agree to receive our regular updates in accordance with our privacy policy.</p>
+            <button class="btn waves-effect waves-light" type="submit">Create Account</button>
+        </form>
+        <h2 class="center-align">Or</h2>
+        <div class="center-align">
+            <button class="btn red" onclick="window.location.href='/login/google'">Google</button>
+            <button class="btn black" onclick="window.location.href='/login/github'">GitHub</button>
+            <button class="btn blue" onclick="window.location.href='/login/twitter'">Twitter</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

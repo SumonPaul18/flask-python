@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Create Account</h1>
+            <form method="POST" action="/create_account">
+                <div class="field">
+                    <label class="label" for="full_name">Full Name:</label>
+                    <div class="control">
+                        <input class="input" type="text" id="full_name" name="full_name" maxlength="255" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="email">Email:</label>
+                    <div class="control">
+                        <input class="input" type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="password">Password:</label>
+                    <div class="control">
+                        <input class="input" type="password" id="password" name="password" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <p>Instruqt’s terms of services apply. By signing up you agree to receive our regular updates in accordance with our privacy policy.</p>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-primary" type="submit">Create Account</button>
+                    </div>
+                </div>
+            </form>
+            <h2 class="title is-4">Or</h2>
+            <div class="buttons">
+                <button class="button is-danger" onclick="window.location.href='/login/google'">Google</button>
+                <button class="button is-dark" onclick="window.location.href='/login/github'">GitHub</button>
+                <button class="button is-info" onclick="window.location.href='/login/twitter'">Twitter</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

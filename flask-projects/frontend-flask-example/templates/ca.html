@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Create Account</h1>
+        <form method="POST" action="/create_account" class="mt-4">
+            <div class="form-group">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" class="form-control" maxlength="255" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <p>Instruqt’s terms of services apply. By signing up you agree to receive our regular updates in accordance with our privacy policy.</p>
+            <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+        </form>
+        <h2 class="text-center mt-4">Or</h2>
+        <div class="text-center">
+            <button class="btn btn-danger" onclick="window.location.href='/login/google'">Google</button>
+            <button class="btn btn-dark" onclick="window.location.href='/login/github'">GitHub</button>
+            <button class="btn btn-info" onclick="window.location.href='/login/twitter'">Twitter</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
