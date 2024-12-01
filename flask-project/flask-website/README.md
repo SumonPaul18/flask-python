@@ -5,6 +5,7 @@
 rm -rf flask-python
 git clone https://github.com/SumonPaul18/flask-python.git
 cd flask-python/flask-project/flask-website
+docker compose up -d
 
 ```
 
