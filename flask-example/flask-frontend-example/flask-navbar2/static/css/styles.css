@@ -1,0 +1,41 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-column {
+    background: url('/static/images/oplab.png') no-repeat center center;
+    background-size: cover;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 100px;
+}
+
+/* Desktop View Styles */
+@media (min-width: 768px) {
+    .container {
+        height: 80vh; /* Adjust height for desktop */
+        flex-direction: row; /* Display elements horizontally */
+        justify-content: space-between; /* Space between elements */
+    }
+
+    .image-column {
+        width: 40%; /* Adjust width for image column */
+    }
+
+    .form-container {
+        width: 50%; /* Adjust width for form container */
+    }
+}
