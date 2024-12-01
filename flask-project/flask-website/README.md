@@ -2,9 +2,10 @@
 
 #### Clone this Repository & Enter the directory
 ```
-rm -rf flask-dashboard-1
-git clone https://github.com/SumonPaul18/flask-dashboard-1.git
-cd flask-dashboard-1
+rm -rf flask-python
+git clone https://github.com/SumonPaul18/flask-python.git
+cd flask-python/flask-project/flask-website
+
 ```
 
 ### After entering the directory you changed `.env` file as your environment variable.
