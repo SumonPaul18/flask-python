@@ -1,6 +1,6 @@
 Here are some popular open-source UI style frameworks that you can use to design the frontend of your Flask application:
 
-### 1. **Foundation**
+### 1. [**Foundation**](https://get.foundation/index.html)
 - **Pros**: 
   - Responsive front-end framework similar to Bootstrap.
   - Provides a wide range of pre-styled components and utilities.
@@ -9,7 +9,7 @@ Here are some popular open-source UI style frameworks that you can use to design
   - Less popular than Bootstrap, so fewer resources and community support.
   - Can be more complex to set up and customize.
 
-### 2. **Bulma**
+### 2. [**Bulma**](https://bulma.io/)
 - **Pros**: 
   - Modern CSS framework based on Flexbox.
   - Simple and easy to use with a clean syntax.
@@ -18,7 +18,7 @@ Here are some popular open-source UI style frameworks that you can use to design
   - Smaller community compared to Bootstrap.
   - Limited JavaScript components.
 
-### 3. **Semantic UI**
+### 3. [**Semantic UI**](https://semantic-ui.com/)
 - **Pros**: 
   - Uses human-friendly HTML for easy readability.
   - Provides a wide range of themes and customization options.
@@ -27,7 +27,7 @@ Here are some popular open-source UI style frameworks that you can use to design
   - Larger file size compared to some other frameworks.
   - Can be more complex to customize deeply.
 
-### 4. **Materialize**
+### 4. [**Materialize**](https://materializecss.com/)
 - **Pros**: 
   - Based on Google's Material Design principles.
   - Provides a modern and clean design aesthetic.
