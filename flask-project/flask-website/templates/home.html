@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Paulco Cloud
+{% endblock %}
+
+{% block navbar %}
+
+<nav class="navbar is-dark">
+  <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+          <img src="/static/images/pc.png" alt="Your Logo">
+      </a>
+  </div>
+  <div class="navbar-menu">
+      <div class="navbar-start">
+          <a class="navbar-item" href="{{ url_for('about') }}">Product</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">Service</a>
+              <div class="navbar-dropdown is-right">
+                  <a class="navbar-item" href="{{ url_for('service', service_name='development') }}">Development</a>
+                  <a class="navbar-item" href="{{ url_for('service', service_name='design') }}">Design</a>
+                  <a class="navbar-item" href="{{ url_for('service', service_name='consulting') }}">Consulting</a>
+              </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">Pricing</a>
+              <div class="navbar-dropdown is-right">
+                  <a class="navbar-item" href="{{ url_for('product', product_category='software') }}">Software</a>
+                  <a class="navbar-item" href="{{ url_for('product', product_category='hardware') }}">Hardware</a>
+                  <a class="navbar-item" href="{{ url_for('product', product_category='services') }}">Services</a>
+              </div>
+          </div>
+      </div>
+      <div class="navbar-end">
+          <div class="navbar-item">
+              <div class="buttons">
+                  <a class="button is-primary" href="{{ url_for('signin') }}">Sign In</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</nav>
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      
+        <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+        <p class="lead">Responsive left-aligned hero with image,Responsive left-aligned hero with image,Responsive left-aligned hero with image,Responsive left-aligned hero with image,Responsive left-aligned hero with image</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          </div>
+        
+      </div>
+      <div class="col">
+        <img src="/static/images/oplab.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
