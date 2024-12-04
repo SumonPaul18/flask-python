@@ -1,0 +1,17 @@
+/* styles.css */
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item .btn-signup {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item .btn-signup i {
+    margin-right: 5px;
+}
