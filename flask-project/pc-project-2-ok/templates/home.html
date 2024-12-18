@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask OAuth App</title>
+    <!-- Custom CSS Linked -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   
+    <!-- Include Navbar -->
+    {% if current_user.is_authenticated %}
+        {% include 'loggedin_navbar.html' %}
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar -->
+            {% include 'sidebar.html' %}
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <h1 class="mt-4">Welcome, {{ current_user.name }}!</h1>
+                    <p>Your email: {{ current_user.email }}</p>
+                    <img src="{{ current_user.profile_pic }}" alt="Profile Picture" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    {% else %}
+        {% include 'navbar.html' %}
+        <div class="container">
+            <div class="jumbotron mt-4">
+                <h1 class="display-4">Welcome to the Flask OAuth App</h1>
+                <p class="lead">Please log in to access your account.</p>
+                <a href="{{ url_for('google.login') }}" class="btn btn-primary">Login with Google</a>
+            </div>
+        </div>
+    {% endif %}
+    
+ <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+    
+</body>
+</html>

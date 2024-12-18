@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Option 1: CoreUI for Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.2.0/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-u3h5SFn5baVOWbh8UkOrAaLXttgSF0vXI15ODtCSxl0v/VKivnCN6iHCcvlyTL7L" crossorigin="anonymous">
+
+    <!-- Link to external CSS -->
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-coreui-toggle="collapse" data-coreui-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-coreui-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidebar sidebar-narrow-unfoldable border-end">
+        <div class="sidebar-header border-bottom">
+          <div class="sidebar-brand">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+            CUI
+          </div>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="nav-title">Nav Title</li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="nav-icon cil-speedometer"></i> Nav item
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="nav-icon cil-speedometer"></i> With badge
+              <span class="badge bg-primary ms-auto">NEW</span>
+            </a>
+          </li>
+          <li class="nav-item nav-group show">
+            <a class="nav-link nav-group-toggle" href="#">
+              <i class="nav-icon cil-puzzle"></i> Nav dropdown
+            </a>
+            <ul class="nav-group-items">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Nav dropdown item
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Nav dropdown item
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item mt-auto">
+            <a class="nav-link" href="https://coreui.io">
+              <i class="nav-icon cil-cloud-download"></i> Download CoreUI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://coreui.io/pro/">
+              <i class="nav-icon cil-layers"></i> Try CoreUI
+              <strong>PRO</strong>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: CoreUI for Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.2.0/dist/js/coreui.bundle.min.js" integrity="sha384-JdRP5GRWP6APhoVS1OM/pOKMWe7q9q8hpl+J2nhCfVJKoS+yzGtELC5REIYKrymn" crossorigin="anonymous"></script>
+
+    <!-- Option 2: CoreUI PRO for Bootstrap Bundle with Popper -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.8.0/dist/js/coreui.bundle.min.js" integrity="sha384-aUfnS+hkMBjwlmClHswy/heTcxNQGkwv2aZATR+O6N9AfSs9Q3a2BJZSlrMeg2sS" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Option 3: Separate Popper and CoreUI/CoreUI PRO  for Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.2.0/dist/js/coreui.min.js" integrity="sha384-c4nHOtHRPhkHqJsqK5SH1UkyoL2HUUhzGfzGkchJjwIrAlaYVBv+yeU8EYYxW6h5" crossorigin="anonymous"></script>
+    or
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.8.0/dist/js/coreui.min.js" integrity="sha384-t/IEYVYno/8oaewMkTyytXA6/k0M8tGy0+OI4n8Plrq2285BTtHWmzUsiJQmWvcJ" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

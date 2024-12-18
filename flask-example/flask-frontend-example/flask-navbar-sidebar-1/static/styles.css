@@ -1,0 +1,70 @@
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 80px; /* Initial width for icons only */
+    position: fixed;
+    top: 75px; /* Adjust based on navbar height */
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    transition: width 0.3s; /* Animation for collapsible effect */
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    border: 1px solid #818181; /* Add border to items */
+    margin-bottom: 10px; /* Space between items */
+    border-radius: 5px; /* Rounded corners for items */
+    background-color: #222; /* Background color for items */
+}
+
+.sidebar a .icon {
+    display: inline-block;
+    width: 30px; /* Width for icons */
+    height: 30px; /* Height for icons */
+    text-align: center;
+}
+
+.sidebar a .icon img {
+    max-width: 100%; /* Auto resize icons */
+    max-height: 100%; /* Auto resize icons */
+}
+
+.sidebar a .text {
+    display: none; /* Hide text initially */
+    margin-left: 10px; /* Space between icon and text */
+}
+
+.sidebar:hover {
+    width: 250px; /* Expand width on hover */
+}
+
+.sidebar:hover a .icon img {
+    display: none; /* Hide icons on hover */
+}
+
+.sidebar:hover a .text {
+    display: inline-block; /* Show text on hover */
+}
+
+.main-content {
+    margin-left: 80px; /* Adjust based on initial sidebar width */
+    padding: 20px;
+    transition: margin-left 0.3s; /* Animation for main content shift */
+}
+
+.sidebar:hover ~ .main-content {
+    margin-left: 250px; /* Adjust based on expanded sidebar width */
+}
+
+/* Adjust navbar height based on logo size */
+.navbar {
+    height: auto; /* Adjust navbar height based on content */
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='/images/pc.png') }}" alt="Logo" style="width: 150px; height: 50px;">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Item1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Item2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Item3</a>
+                </li>
+            </ul>
+            
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 400px;">
+            </form>
+            
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        User Icon
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <a href="{{ url_for('section1') }}"><span class="icon"><img src="{{ url_for('static', filename='/images/google.png') }}" alt="Home"></span><span class="text"> Section1</span></a>
+        <a href="{{ url_for('section2') }}"><span class="icon"><img src="{{ url_for('static', filename='/images/pc.png') }}" alt="Documents"></span><span class="text"> Section2</span></a>
+        <a href="{{ url_for('section3') }}"><span class="icon"><img src="{{ url_for('static', filename='chart_icon.png') }}" alt="Charts"></span><span class="text"> Section3</span></a>
+        <div class="subitems">
+            <a href="{{ url_for('subitem1') }}"><span class="text"> Subitem1</span></a>
+            <a href="{{ url_for('subitem2') }}"><span class="text"> Subitem2</span></a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        {% if content == 'section1' %}
+            <h1>Section 1</h1>
+            <p>This is the content for Section 1.</p>
+        {% elif content == 'section2' %}
+            <h1>Section 2</h1>
+            <p>This is the content for Section 2.</p>
+        {% elif content == 'section3' %}
+            <h1>Section 3</h1>
+            <p>This is the content for Section 3.</p>
+        {% elif content == 'subitem1' %}
+            <h1>Subitem 1</h1>
+            <p>This is the content for Subitem 1.</p>
+        {% elif content == 'subitem2' %}
+            <h1>Subitem 2</h1>
+            <p>This is the content for Subitem 2.</p>
+        {% else %}
+            <h1>Main Content</h1>
+            <p>This is the main content area of the dashboard.</p>
+        {% endif %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

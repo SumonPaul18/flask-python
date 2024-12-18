@@ -1,0 +1,20 @@
+/* styles.css */
+.navbar {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .sidebar {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .sidebar .sidebar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar .sidebar-brand img {
+    max-height: 40px; /* Adjust the size as needed */
+    margin-right: 10px;
+  }
