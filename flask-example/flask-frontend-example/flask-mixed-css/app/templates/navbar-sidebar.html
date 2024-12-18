@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Navbar with Sidebar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Semantic UI CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <!-- Core UI CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/coreui/3.4.0/css/coreui.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        .navbar-brand img {
+            height: 40px;
+        }
+        .sidebar {
+            height: calc(100% - 56px); /* Adjust based on navbar height */
+            width: 80px;
+            position: fixed;
+            top: 56px; /* Adjust based on navbar height */
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+            transition: width 0.3s;
+        }
+        .sidebar:hover {
+            width: 250px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar a img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .sidebar a span {
+            display: none;
+        }
+        .sidebar:hover a span {
+            display: inline;
+        }
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+        .openbtn:hover {
+            background-color: #444;
+        }
+        #main {
+            margin-left: 80px; /* Adjust based on sidebar width */
+            padding: 20px;
+        }
+        .sidebar:hover + #main {
+            margin-left: 250px; /* Adjust based on sidebar expanded width */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+        </ul>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button">Sign In</button>
+    </div>
+</nav>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+    <a href="#"><img src="home_icon.png" alt="Home"><span>Home</span></a>
+    <a href="#"><img src="features_icon.png" alt="Features"><span>Features</span></a>
+    <a href="#"><img src="pricing_icon.png" alt="Pricing"><span>Pricing</span></a>
+    <a href="#"><img src="contact_icon.png" alt="Contact"><span>Contact</span></a>
+</div>
+
+<!-- Main content -->
+<div id="main">
+    <h2>Modern Sidebar Example</h2>
+    <p>Hover over the sidebar to expand and see the item names.</p>
+</div>
+
+<!-- JavaScript -->
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Semantic UI JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<!-- Core UI JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/coreui/3.4.0/js/coreui.min.js"></script>
+
+</body>
+</html>

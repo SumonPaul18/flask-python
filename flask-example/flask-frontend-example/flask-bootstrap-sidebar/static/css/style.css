@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #87CEEB; /* Sky blue color */
+}
+
+.sidebar {
+    width: 80px;
+    transition: width 0.3s;
+    background-color: #87CEEB; /* Sky blue color */
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar .nav-item {
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* Border only at the bottom */
+    margin: 5px 0;
+}
+
+.sidebar .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.sidebar .nav-item .nav-link span {
+    display: none;
+    margin-left: 10px;
+}
+
+.sidebar:hover .nav-item .nav-link span {
+    display: inline;
+}
+
+.sidebar .nav-item .nav-link img {
+    max-width: 100%; /* Make images responsive */
+    max-height: 30px; /* Maintain aspect ratio and set max height */
+    width: 50px; /* Maintain aspect ratio */
+    height: 40px; /* Maintain aspect ratio */
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}

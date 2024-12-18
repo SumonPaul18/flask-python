@@ -1,0 +1,53 @@
+/* Custom CSS */
+.navbar-brand img {
+    height: 40px;
+}
+.sidebar {
+    height: calc(100% - 56px); /* Adjust based on navbar height */
+    width: 80px;
+    position: fixed;
+    top: 56px; /* Adjust based on navbar height */
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    transition: width 0.3s;
+}
+.sidebar:hover {
+    width: 250px;
+}
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.sidebar a img {
+    height: 30px;
+    margin-right: 10px;
+}
+.sidebar a span {
+    display: none;
+}
+.sidebar:hover a span {
+    display: inline;
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+.openbtn:hover {
+    background-color: #444;
+}
+#main {
+    margin-left: 80px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
+.sidebar:hover + #main {
+    margin-left: 250px; /* Adjust based on sidebar expanded width */
+}
