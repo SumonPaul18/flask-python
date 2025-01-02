@@ -1,0 +1,49 @@
+.dropdown-menu a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .dropdown-menu a .d-flex {
+    transition: all 0.5s;
+  }
+  .dropdown-menu .col-sm-6:nth-child(1) a:hover .d-flex {
+    background-color: var(--bs-warning-bg-subtle);
+  }
+  .dropdown-menu .col-sm-6:nth-child(2) a:hover .d-flex {
+    background-color: var(--bs-danger-bg-subtle);
+  }
+  .dropdown-menu .col-sm-6:nth-child(3) a:hover .d-flex {
+    background-color: var(--bs-success-bg-subtle);
+  }
+  .dropdown-menu .col-sm-6:nth-child(4) a:hover .d-flex {
+    background-color: var(--bs-secondary-bg-subtle);
+  }
+  .dropdown-menu .col-sm-6:nth-child(5) a:hover .d-flex {
+    background-color: var(--bs-tertiary-bg);
+  }
+  .dropdown-menu .col-sm-6:nth-child(6) a:hover .d-flex {
+    background-color: var(--bs-info-bg-subtle);
+  }
+  @media only screen and (min-width: 992px) {
+    .dropdown-menu {
+      width: 55vw;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: flex;
+    }
+    .dropdown-menu.show {
+      display: flex;
+    }
+  }
+
+  /* change the navbar color */
+  .navbar{
+    background-color: #7fd0db;
+  }
+/* change the navbar brand-logo size */
+  .brand-logo {
+    width: 30%;
+  }
+/* change the navbar menu color */
+  .navbar .navbar-nav .nav-link {
+    color: #000000;
+}

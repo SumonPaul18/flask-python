@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.full-screen {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+    padding: 20px; /* Custom padding for other components */
+}
+@media (max-width: 768px) {
+    .content {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
