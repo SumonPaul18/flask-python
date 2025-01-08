@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}Pricing Plans{% endblock %}
+
+{% block content %}
+<section class="hero is-light">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">Pricing Plans</h1>
+            <h2 class="subtitle">Choose the plan that fits your needs</h2>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <!-- Pricing Table -->
+        <table class="table is-fullwidth has-text-centered mt-5">
+            <thead style="background-color: #007bff; color: white;">
+                <tr>
+                    <th>Plan</th>
+                    <th>Features</th>
+                    <th>Price per Month</th>
+                </tr>
+            </thead>
+            <tbody style="background-color: #f9f9f9;">
+                <!-- Basic Plan -->
+                <tr style='border-bottom: 1px solid #eaeaea;'>
+                    <td><strong>Basic Plan</strong></td>
+                    <td>5 GB Storage, 1 User, Email Support</td>
+                    <td>$10</td>
+                </tr>
+
+                <!-- Standard Plan -->
+                <tr style='border-bottom: 1px solid #eaeaea;'>
+                    <td><strong>Standard Plan</strong></td>
+                    <td>50 GB Storage, 5 Users, Priority Support</td>
+                    <td>$25</td>
+                </tr>
+
+                <!-- Premium Plan -->
+                <tr style='border-bottom: 1px solid #eaeaea;'>
+                    <td><strong>Premium Plan</strong></td>
+                    <td>200 GB Storage, Unlimited Users, 24/7 Support</td>
+                    <td>$50</td>
+                </tr>
+
+                <!-- Enterprise Plan -->
+                <!-- Add more plans as needed -->
+                <!-- Example of an Enterprise Plan -->
+                <!-- You can customize this section further based on your offerings -->
+                <!-- Uncomment below if you want to add Enterprise plan -->
+                <!--
+                <tr style='border-bottom: 1px solid #eaeaea;'>
+                    <td><strong>Enterprise Plan</strong></td>
+                    <td>Unlimited Storage, Dedicated Support, Custom Solutions</td>
+                    <td>$100+</td> 
+                </tr> 
+                -->
+            </tbody>
+
+        </table>
+
+        <!-- Call to Action -->
+        <!-- This section encourages users to take action after viewing the pricing -->
+        <!-- You can customize the button link as needed -->
+        <!-- Example button link to sign up or contact sales -->
+        <!-- Uncomment below if you want to add a button for getting started -->
+        <!--
+        <div style='margin-top: 20px;'class='has-text-centered'>
+            <!--<a href="{{ url_for('signup') }}" 
+               style='background-color: #007bff; color: white;' 
+               onclick='alert("Sign Up functionality coming soon!")' 
+               >Get Started Now!</a>-->
+        </ div >
+        -->
+
+    </ div >
+</ section >
+
+{% endblock %}
