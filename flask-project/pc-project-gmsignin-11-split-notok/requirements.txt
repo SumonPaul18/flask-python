@@ -1,7 +1,8 @@
-Flask==2.0.1
+Flask==2.0.3
 Flask-SQLAlchemy==2.5.1
-Flask-Mail==0.9.1
-Flask-Dance==5.0.0
-Flask-Login==0.5.0
-python-dotenv==0.19.1
-itsdangerous==2.0.1
+SQLAlchemy==1.4.*
+Flask-Dance==4.0.*
+Flask-Login==0.5.*
+Flask-Mail==0.9.*
+python-dotenv==0.19.*
+Werkzeug==2.0.*  # Ensure this line is present for compatibility.
