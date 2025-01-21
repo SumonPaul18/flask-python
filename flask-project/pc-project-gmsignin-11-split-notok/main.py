@@ -28,6 +28,7 @@ app.secret_key = os.getenv("SECRET_KEY", "supersekrit")
 
 # setup database models
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///signup-update8.db"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
 class User(db.Model, UserMixin):
