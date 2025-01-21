@@ -6,3 +6,4 @@ Flask-Login==0.5.*
 Flask-Mail==0.9.*
 python-dotenv==0.19.*
 Werkzeug==2.0.*  # Ensure this line is present for compatibility.
+gunicorn==20.1.0
