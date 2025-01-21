@@ -4,7 +4,5 @@ services:
     build: .
     ports:
       - "5000:5000"
-    environment:
-      - SECRET_KEY=${SECRET_KEY}
-      - GOOGLE_OAUTH_CLIENT_ID=${GOOGLE_OAUTH_CLIENT_ID}
-      - GOOGLE_OAUTH_CLIENT_SECRET=${GOOGLE_OAUTH_CLIENT_SECRET}
+    env_file:
+      - .env  # Load environment variables from .env file
