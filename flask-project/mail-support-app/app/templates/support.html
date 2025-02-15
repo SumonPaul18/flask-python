@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container">
+    <h2>Support Form</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="domain" class="form-label">Your Domain</label>
+            <input type="text" class="form-control" id="domain" name="domain" required>
+        </div>
+        <div class="mb-3">
+            <label for="receiver_email" class="form-label">Receiver Email ID</label>
+            <input type="email" class="form-control" id="receiver_email" name="receiver_email" required>
+        </div>
+        <div class="mb-3">
+            <label for="sender_email" class="form-label">Sender Email ID</label>
+            <input type="email" class="form-control" id="sender_email" name="sender_email" required>
+        </div>
+        <div class="mb-3">
+            <label for="valid_email" class="form-label">Valid Email</label>
+            <input type="email" class="form-control" id="valid_email" name="valid_email">
+        </div>
+        <div class="mb-3">
+            <label for="invalid_email" class="form-label">Invalid Email</label>
+            <input type="email" class="form-control" id="invalid_email" name="invalid_email">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

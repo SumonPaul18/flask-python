@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Instance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .network-image {
+            width: 50px; /* Adjust size as needed */
+            height: 50px; /* Adjust size as needed */
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Create Instance</h2>
+    <form method="POST">
+        <div class="form-group">
+            <label for="name">Instance Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Image:</label>
+            <input type="text" class="form-control" id="image" name="image" readonly onclick="openImageModal()" required>
+        </div>
+
+        <!-- Image Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Select Image</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span></button></div><div class='modal-body'>
+                                {% for image in images %}
+                                    <button type='button' class='btn btn-light image-btn' onclick='selectImage("{{ image.id }}", "{{ image.name }}")'>{{ image.name }}</button>{% endfor %}</div></div></div></div>
+
+        <div class="form-group">
+            <label for="flavor">Flavor:</label>
+            <input type="text" class="form-control" id="flavor" name="flavor" readonly onclick="openFlavorModal()" required>
+        </div>
+
+        <!-- Flavor Modal -->
+        <div class="modal fade" id="flavorModal" tabindex="-1" aria-labelledby="flavorModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="flavorModalLabel">Select Flavor</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span></button></div><div class='modal-body'>
+                                {% for flavor in flavors %}
+                                    <button type='button' class='btn btn-light flavor-btn' onclick='selectFlavor("{{ flavor.id }}", "{{ flavor.name }}")'>{{ flavor.name }}</button>{% endfor %}</div></div></div></div>
+
+        <div class="form-group">
+            <label for="network">Network:</label>
+            <input type="text" class="form-control" id="network" name="network" readonly onclick="openNetworkModal()" required>
+        </div>
+
+        <!-- Network Modal -->
+        <div class="modal fade" id="networkModal" tabindex="-1" aria-labelledby="networkModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="networkModalLabel">Select Network</h5>
+                        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                            <span>&times;</span></button></div><div class='modal-body'>
+                                {% for network in networks %}
+                                    <button type='button' class='btn btn-light network-btn' onclick='selectNetwork("{{ network.id }}", "{{ network.name }}")'>
+                                        <img src="{{ network.image_url }}" alt="{{ network.name }}" class='network-image'> {{ network.name }}
+                                    </button>{% endfor %}</div></div></div></div>
+
+        <div class="form-group">
+            <label for="package">Package:</label>
+            <input type="text" class="form-control" id="package" name="package" readonly onclick="openPackageModal()" required>
+        </div>
+
+        <!-- Package Modal -->
+        <div class="modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalLabel" aria-hidden="true">
+            <div class='modal-dialog'>
+                <div class='modal-content'>
+                    <div class='modal-header'>
+                        <h5 class='modal-title' id='packageModalLabel'>Select Package</h5>
+                        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                            <span>&times;</span></button></div><div class='modal-body'>
+                                <!-- Free Package -->
+                                <button type='button' class='btn btn-light package-btn' onclick='selectPackage("free")'>Free</button>
+
+                                <!-- Paid Package -->
+                                <!-- You can add payment logic here if needed -->
+                                <!-- For now just a button that selects paid -->
+                                <button type='button' class='btn btn-light package-btn' onclick='selectPackage("paid")'>Paid</button>
+
+                            </div></div></div></div>
+
+        <!-- Submit Button -->
+        <button type='submit' class='btn btn-primary'>Create Instance</button>
+
+    </form>
+</div>
+
+<script src='https://code.jquery.com/jquery-3.5.1.slim.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+
+<script>
+// Function to open Image Modal
+function openImageModal() {
+    $('#imageModal').modal('show');
+}
+
+// Function to select Image and set it in input field
+function selectImage(id, name) {
+    $('#image').val(name);
+    $('#image').attr('data-image-id', id);  // Store the image ID
+    $('#imageModal').modal('hide');
+}
+
+// Function to open Flavor Modal
+function openFlavorModal() {
+    $('#flavorModal').modal('show');
+}
+
+// Function to select Flavor and set it in input field
+function selectFlavor(id, name) {
+    $('#flavor').val(name);
+    $('#flavorModal').modal('hide');
+}
+
+// Function to open Network Modal
+function openNetworkModal() {
+    $('#networkModal').modal('show');
+}
+
+// Function to select Network and set it in input field
+function selectNetwork(id, name) {
+    $('#network').val(name);
+    $('#network').attr('data-network-id', id);  // Store the network ID
+    $('#networkModal').modal('hide');
+}
+
+// Function to open Package Modal
+function openPackageModal() {
+    $('#packageModal').modal('show');
+}
+
+// Function to select Package and set it in input field
+function selectPackage(type) {
+    $('#package').val(type);
+    $('#packageModal').modal('hide');
+}
+</script>
+
+</body>
+</html>

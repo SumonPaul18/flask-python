@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Instances</title>
+</head>
+<body>
+<h1>Manage Instances</h1>
+
+<table border="1">
+    <tr>
+        <th>Instance ID</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for instance in instances %}
+    <tr>
+        <td>{{ instance.id }}</td>
+        <td>{{ instance.name }}</td>
+        <td>{{ instance.status }}</td>
+        <td>
+            <!-- Start Instance -->
+            <form action="{{ url_for('start_instance', instance_id=instance.id) }}" method="post">
+                <button type="submit">Start</button>
+            </form>
+
+            <!-- Stop Instance -->
+            <form action="{{ url_for('stop_instance', instance_id=instance.id) }}" method="post">
+                <button type="submit">Stop</button>
+            </form>
+
+            <!-- Reboot Instance -->
+            <form action="{{ url_for('reboot_instance', instance_id=instance.id) }}" method="post">
+                <button type="submit">Reboot</button>
+            </form>
+
+            <!-- Delete Instance -->
+            <form action="{{ url_for('delete_instance', instance_id=instance.id) }}" method="post">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="{{ url_for('create_instance', project_id=project_id) }}">Create New Instance</a><br>
+<a href="{{ url_for('list_projects') }}">Back to Projects</a>
+
+</body>
+</html>

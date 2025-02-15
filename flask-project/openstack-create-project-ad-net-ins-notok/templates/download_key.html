@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download SSH Key</title>
+</head>
+<body>
+    <h1>Download SSH Key</h1>
+    <p>আপনার SSH কী ডাউনলোড করুন:</p>
+    <a href="{{ url_for('download_key', key_name=key_name) }}">Download {{ key_name }}.pem</a>
+</body>
+</html>

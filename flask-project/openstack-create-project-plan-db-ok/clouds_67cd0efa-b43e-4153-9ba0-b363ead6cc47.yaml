@@ -1,0 +1,14 @@
+clouds:
+  sumon:
+    auth:
+      auth_url: http://192.168.0.50:5000
+      identity_api_version: 3
+      interface: public
+      password: '12345'
+      project_domain_name: Default
+      project_id: 337ebb7f826547f5b002b3ec9a79b37b
+      project_name: sumon
+      region_name: RegionOne
+      user_domain_name: Default
+      username: sumon
+    region_name: Satkhira

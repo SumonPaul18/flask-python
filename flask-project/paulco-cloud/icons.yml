@@ -1,0 +1,33 @@
+icons:
+  Computing:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Instance:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Create Instance:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Kubernetes:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Docker:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Login:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Register:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Networking:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Domain:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  DNS:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  IPs:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Monitorning:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Bills:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Supports:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Setting:
+    icon: "k8s.png" # Replace with your icon file name in static/icons
+  Logout:
+    icon: "k8s.png" # Replace with your icon file name in static/icons

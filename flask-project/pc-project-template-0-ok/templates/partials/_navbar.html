@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg bg-dark ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/static/image/pc.png" alt="Logo" style="height: 30px; width: auto;" class="d-inline-block align-text-top">
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="{{ url_for('about') }}">Product</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="#">Service</a>
+                <div class="navbar-dropdown is-right">
+                    <a class="navbar-item" href="{{ url_for('service', service_name='development') }}">Development</a>
+                    <a class="navbar-item" href="{{ url_for('service', service_name='design') }}">Design</a>
+                    <a class="navbar-item" href="{{ url_for('service', service_name='consulting') }}">Consulting</a>
+                </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="#">Pricing</a>
+                <div class="navbar-dropdown is-right">
+                    <a class="navbar-item" href="{{ url_for('product', product_category='software') }}">Software</a>
+                    <a class="navbar-item" href="{{ url_for('product', product_category='hardware') }}">Hardware</a>
+                    <a class="navbar-item" href="{{ url_for('product', product_category='services') }}">Services</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary" href="{{ url_for('signin') }}">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

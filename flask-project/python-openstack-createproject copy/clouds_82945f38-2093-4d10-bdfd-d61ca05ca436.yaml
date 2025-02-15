@@ -1,0 +1,13 @@
+clouds:
+  sumon:
+    auth:
+      auth_url: http://192.168.0.50:5000
+      password: '12345'
+      project_domain_name: Default
+      project_id: 8797ceea76324f5daa583e9dc9aa3da0
+      project_name: sumon
+      user_domain_name: Default
+      username: sumon
+    identity_api_version: 3
+    interface: public
+    region_name: Dhaka

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Create Instance</title>
+</head>
+<body>
+<h1>Create New Instance</h1>
+<form method="POST" action="{{ url_for('create_instance', project_id=project_id) }}">
+   <label for="instance_name">Instance Name:</label><br>
+   <input type="text" id="instance_name" name="instance_name" required><br><br>
+
+   <label for="image_id">Image ID:</label><br>
+   <input type="text" id="image_id" name="image_id" required><br><br>
+
+   <label for="flavor_id">Flavor ID:</label><br>
+   <input type="text" id="flavor_id" name="flavor_id" required><br><br>
+
+   <label for="network_id">Network ID:</label><br>
+   <input type="text" id="network_id" name="network_id" required><br><br>
+
+   <input type="submit" value="Create Instance">
+</form>
+
+<a href="{{ url_for('list_projects') }}">Back to Projects</a>
+</body>
+</html>

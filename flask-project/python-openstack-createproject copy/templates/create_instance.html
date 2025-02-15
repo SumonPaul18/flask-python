@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Create Instance{% endblock %}
+
+{% block content %}
+<h1>Create Instance</h1>
+<form action="/projects/{{ current_user.username }}/create_instance" method="POST">
+    <div class='mb-3'>
+        <label for='name' class='form-label'>Instance Name:</label>
+        <input type='text' name='name' id='name' class='form-control' required placeholder='Enter instance name'>
+    </div>
+
+    <!-- Image Selection -->
+    <div class='mb-3'>
+        <label for='image' class='form-label'>Image:</label>
+        <select id='image' name='image' class='form-select'>
+            {% for image in images %}
+                <option value="{{ image.id }}">{{ image.name }}</option>
+            {% endfor %}
+        </select>    
+    </div>
+
+    <!-- Flavor Selection -->
+    <div class='mb-3'>
+        <label for='flavor' class='form-label'>Flavor:</label>    
+        <select id='flavor' name='flavor' class='form-select'>
+            {% for flavor in flavors %}
+                <option value="{{ flavor.id }}">{{ flavor.name }}</option>    
+            {% endfor %}
+        </select>    
+    </div>
+
+    <!-- Network Selection -->
+    <div class='mb-3'>
+        <label for='network' class='form-label'>Network:</label>    
+        <select id='network' name='network' class='form-select'>
+            {% for network in networks %}
+                <option value="{{ network.id }}">{{ network.name }}</option>    
+            {% endfor %}
+        </select>    
+    </div>
+
+    <!-- Submit Button -->
+    <button type='submit' class='btn btn-primary'>Create Instance</button>    
+</form>  
+{% endblock %}

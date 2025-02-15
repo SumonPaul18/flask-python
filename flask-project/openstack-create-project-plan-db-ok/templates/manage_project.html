@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Project</title>
+</head>
+<body>
+    <h1>Manage Your Project</h1>
+
+    <!-- List Instances -->
+    <h2>Instances:</h2>
+    {% if instances %}
+      <ul>
+          {% for instance in instances %}
+              <li>{{ instance.name }} - {{ instance.status }}</li>
+          {% endfor %}
+      </ul>
+    {% else %}
+      <p>No instances found.</p>
+    {% endif %}
+
+    <!-- Create Instance Button -->
+    <a href="/create_instance/{{ session['project_id'] }}"><button>Create Instance</button></a>
+</body>
+</html>

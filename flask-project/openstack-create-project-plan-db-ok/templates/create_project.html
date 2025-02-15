@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Project</title>
+</head>
+<body>
+    <h1>Create a New Project</h1>
+    <form method="POST">
+        <label>Username:</label><br/>
+        <input type="text" name="username" required/><br/>
+        
+        <label>Password:</label><br/>
+        <input type="password" name="password" required/><br/>
+        
+        <label>Project Name:</label><br/>
+        <input type="text" name="project_name" required/><br/>
+        
+        <label>Package Type:</label><br/>
+        <select name="package_type">
+            <option value="free">Free</option>
+            <option value="paid">Paid</option>
+        </select><br/>
+        
+        <label>Project Plan:</label><br/>
+        <select name="project_plan">
+            <option value="webapp">Web App</option>
+            <option value="website">Website</option>
+            <option value="cms">CMS</option>
+            <option value="lms">LMS</option>
+        </select><br/>
+
+        <!-- Select Primary Project -->
+        <label>Select Primary Project:</label><br/>
+        <select name="primary_project_id">
+            <option value="">None</option>
+            {% for project in existing_projects %}
+                <option value="{{ project.id }}">{{ project.name }}</option>
+            {% endfor %}
+        </select><br/>
+
+        <!-- Add Project Members -->
+        <label>Add Project Members (Usernames):</label><br/>
+        <input type="text" name="project_members" placeholder="Enter usernames separated by commas"/><br/><br/>
+
+        
+       <!-- Submit Button -->
+       <button type="submit">Create Project</button>
+    </form>
+</body>
+</html>

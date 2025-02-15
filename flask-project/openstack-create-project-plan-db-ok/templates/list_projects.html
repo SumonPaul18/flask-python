@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Your Projects</title>
+</head>
+<body>
+<h1>Your Projects</h1>
+<ul>
+{% for project in projects %}
+<li>{{ project.project_name }} - 
+<a href="{{ url_for('manage_instances', project_id=project.project_id) }}">Manage Instances</a></li>
+{% endfor %}
+</ul>
+
+<a href="{{ url_for('create_project') }}">Create New Project</a>
+</body>
+</html>

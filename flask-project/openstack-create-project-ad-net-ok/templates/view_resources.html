@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Resources</title>
+</head>
+<body>
+    <h1>Resources for Project: {{ session['project_name'] }}</h1>
+
+    <h2>Instances</h2>
+    <ul>
+        {% for instance in instances %}
+            <li>{{ instance.name }} (ID: {{ instance.id }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Networks</h2>
+    <ul>
+        {% for network in networks %}
+            <li>{{ network.name }} (ID: {{ network.id }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Images</h2>
+    <ul>
+        {% for image in images %}
+            <li>{{ image.name }} (ID: {{ image.id }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Flavors</h2>
+    <ul>
+        {% for flavor in flavors %}
+            <li>{{ flavor.name }} (ID: {{ flavor.id }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Key Pairs</h2>
+    <ul>
+        {% for key in keys %}
+            <li>{{ key.name }} (ID: {{ key.id }})</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>

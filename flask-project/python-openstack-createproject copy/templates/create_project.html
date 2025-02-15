@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Create Project{% endblock %}
+
+{% block content %}
+<h1>Create a New Project</h1>
+<form action="/create_project" method="POST">
+    <div class="mb-3">
+        <label for="project_name" class="form-label">Project Name:</label>
+        <input type="text" id="project_name" name="project_name" class="form-control" required placeholder="Enter project name">
+    </div>
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Username:</label>
+        <input type="text" id="username" name="username" class="form-control" required placeholder="Enter username">
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" id="password" name="password" class="form-control" required placeholder="Enter password">
+    </div>
+
+    <div class="mb-3">
+        <label for="location" class="form-label">Location:</label>
+        <input type="text" id="location" name="location" class="form-control" required placeholder="Enter location">
+    </div>
+
+     <button type = "submit"class = "btn btn-primary">Create Project</button> 
+     </form> 
+{% endblock %}
